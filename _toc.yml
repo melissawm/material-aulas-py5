@@ -1,6 +1,5 @@
 root: index
 entries:
 - file: jupyterbook_installation_notes
-- file: tutorials/introduction_to_py5bot
 - file: tutorials/rotating_cube
-
+- file: tutorials/imported_mode

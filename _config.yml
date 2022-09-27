@@ -5,6 +5,8 @@ title: material-aulas-py5
 author: Alexandre Villares
 logo: images/main/logo.png
 
+only_build_toc_files : true
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -25,8 +27,7 @@ repository:
   branch: main
 
 launch_buttons:
-  # notebook_interface: "classic"
-  thebe: true
+  notebook_interface: "classic"
 
 # Add GitHub buttons to your book
 html:

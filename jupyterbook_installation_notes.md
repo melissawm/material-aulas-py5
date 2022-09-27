@@ -1,4 +1,4 @@
-### how to set up this repo
+# how to set up this repo
 
 Context: This is an attempt at making a jupyter{book} version of my `material-aulas` teaching repository
 
@@ -6,12 +6,12 @@ Goal: Make class materials that can profit from Thebe/MyBinder.org execution.
 
 Work in progress. Published as proof of concept here: https://abav.lugaralgum.com/material-aulas-py5/
 
-#### Recording steps taken so far (work in progress)
+## Recording steps taken so far (work in progress)
 
 - 2021-09-18 First attempt, lots of help from @hx2A, first jupyter book working page!
 - 2021-09-19 Cleaning up the steps needed (removing some wrong turns taken)
 
-##### Steps
+### Steps
 
 - Cloned requirements and settings from https://py5.ixora.io Jupyter Book docs
    - This repo starts as a hollowed out clone of the `py5` doc
@@ -30,3 +30,7 @@ TO DO:
    - [ ] Study how to use a makefile & pre- and post-processing scripts
    - [X] install additional `py5bot` kernel to use "static mode" examples. [Instructions here](https://py5.ixora.io/content/install.html#jupyter-notebook-kernels).
    
+### How to pair jupyter notebooks with md
+
+1. Install `jupytext`
+2. Run `jupytext --set-formats ipynb,myst imported_mode.ipynb`
