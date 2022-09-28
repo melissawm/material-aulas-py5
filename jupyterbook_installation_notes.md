@@ -2,7 +2,7 @@
 
 Context: This is an attempt at making a jupyter{book} version of my `material-aulas` teaching repository
 
-Goal: Make class materials that can profit from Thebe/MyBinder.org execution.
+Goal: Make class materials that can profit from MyBinder.org execution.
 
 Work in progress. Published as proof of concept here: https://abav.lugaralgum.com/material-aulas-py5/
 
@@ -29,8 +29,36 @@ TO DO:
    - [ ] Work out why the images are broken :(
    - [ ] Study how to use a makefile & pre- and post-processing scripts
    - [X] install additional `py5bot` kernel to use "static mode" examples. [Instructions here](https://py5.ixora.io/content/install.html#jupyter-notebook-kernels).
-   
-### How to pair jupyter notebooks with md
+
+## Proposed new setup (Sep 2022)
+
+After installing all required dependencies with
+`python -m pip install -r requirements.txt`, it should be possible to build and
+execute all notebooks in this repo.
+
+### Convert all notebooks (.ipynb files) to .md files
+
+Using `jupytext` makes it easier to store executable notebooks as markdown
+files, for lighter editing and easier version control.
+
+#### How to pair jupyter notebooks with md
 
 1. Install `jupytext`
-2. Run `jupytext --set-formats ipynb,myst imported_mode.ipynb`
+2. In your terminal, run `jupytext --set-formats ipynb,myst <notebook>.ipynb`
+
+### How to set up mybinder.org
+
+#### Manual setup
+
+1. Copy the repo URL (https://github.com/melissawm/material-aulas-py5) and paste
+   in the mybinder.org page
+2. Select the main branch in the form
+3. Click the launch button to get a live version of the repo
+4. Alternatively, copy the generated link from the binder website
+   (https://mybinder.org/v2/gh/melissawm/material-aulas-py5/main) and add to
+   your README or main landing page, like this:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/melissawm/material-aulas-py5/main)
+
+
+#### 

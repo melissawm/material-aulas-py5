@@ -49,7 +49,6 @@ def draw():
                 my_box(x, y, z, 25 + 25 * sin(x + y + frame_count / 20.0))
 ```
 
-
 ```{code-cell} ipython3
 py5.run_sketch()  # chama o setup() uma vez, e o draw() em repetição.
 ```
@@ -60,8 +59,9 @@ time.sleep(3)
 py5_tools.screenshot()
 ```
 
-Para ver o resultado usando o mybinder.org, remova o comentário na próxima
-célula:
+Se você está executando esse notebook no mybinder.org, pode remover o comentário
+na próxima célula para executar o comando de forma interativa.
+
 ```{code-cell} ipython3
 # portal = py5_tools.sketch_portal(quality=75, scale=1.0)
 ```
